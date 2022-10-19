@@ -1,0 +1,461 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* -----------------LANDING ------------ */
+
+.landing-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(assets/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+}
+
+.nav-container .nav-brand {
+  color: white;
+  font-size: 1em;
+  font-weight: 800;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.nav-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.nav-container ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.nav-container ul li a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.nav-container ul li a:hover {
+  color: rgb(177, 138, 97);
+  transition: 0.2s ease-in-out;
+}
+
+.landing-main {
+  margin-top: 13%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-main h1 {
+  color: whitesmoke;
+  font-size: 3.2em;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 0.3em;
+  margin-bottom: 0.4em;
+}
+
+.landing-main .landing-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  padding: 0.7em 2.1em;
+  font-size: 1.1em;
+  font-weight: 500;
+  background-color: rgb(177, 138, 97);
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.landing-main .landing-btn:hover {
+  background-color: rgba(167, 128, 87);
+}
+
+.landing-main .landing-btn a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.landing-main .landing-btn span {
+  font-size: small;
+  font-weight: bolder;
+}
+
+/* ----------------------------CONTENT ------------------ */
+
+.main-container {
+  padding: 4em 0;
+  background-color: #eee;
+}
+
+.main-container .main-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.main-contents {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.main-contents .images-side {
+  width: 20%;
+  display: flex;
+  align-items: end;
+  padding: 1em;
+}
+
+.main-contents .images-side img {
+  width: 300px;
+  height: 330px;
+  border-radius: 15px;
+}
+
+.main-contents .images-side button {
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+  background-color: rgb(177, 138, 97);
+  color: whitesmoke;
+  border-radius: 20px;
+}
+
+.main-contents .images-side button:hover {
+  background-color: rgba(167, 128, 87);
+}
+
+.main-contents .text-side {
+  width: 80%;
+}
+
+.main-contents .text-side .text-side-title {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.main-contents .text-side .text-side-contents {
+  height: 300px;
+  background-color: #ddd;
+  border-radius: 15px;
+}
+
+.main-contents .text-side .text-side-contents p {
+  margin-bottom: 10px;
+}
+
+.img-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.btn-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.title-left,
+.contents-left {
+  padding: 1em 2em 1em 30%;
+}
+
+.img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.btn-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.title-right,
+.contents-right {
+  padding: 1em 30% 1em 2em;
+}
+
+/* --------------------BACK TO TOP ---------------- */
+
+.back-to-top-btn {
+  width: 40px;
+  height: 40px;
+  background-color: rgb(177, 138, 97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.back-to-top-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+/* -------------------------------TEAM ----------- */
+.team-container {
+  padding: 4em;
+}
+
+.team-container .team-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.team-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.team {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.team-contents .team figure {
+  background-color: black;
+}
+
+.team-contents .team img {
+  width: 250px;
+  height: 250px;
+  background-size: cover;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.team-contents .team figure:hover img {
+  opacity: 0.5;
+}
+
+.team-contents .team p {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding: 0.5em;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/*  ------------------ CLIENT ------------------ */
+
+.client {
+  background-color: #eee;
+}
+
+.client-container {
+  width: 50%;
+  margin: auto;
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+.client-container .client-image img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  border-radius: 25px;
+}
+
+.client-contents .client-title {
+  font-size: 2em;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+
+.client-contents .client-comments {
+  font-size: 1.1em;
+  color: lightslategrey;
+}
+
+.client-contents .client-name {
+  color: rgb(177, 138, 97);
+  font-weight: 400;
+  font-size: 1.4em;
+  margin-top: 10px;
+}
+
+.slides input {
+  display: none;
+}
+
+.slides-container {
+  width: 380px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 500%;
+  height: 200px;
+  display: flex;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.nav-manual {
+  position: absolute;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  gap: 0.4em;
+}
+
+.manual-btn {
+  border: 3px solid rgb(177, 138, 97);
+  padding: 3px;
+  border-radius: 50%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.manual-btn:hover {
+  background-color: rgb(177, 138, 97);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+#radio4:checked ~ .first {
+  margin-left: -60%;
+}
+/* ---------------------------------Contact */
+.contact-container {
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container .contact-contents h3 {
+  margin: 0.5em 0;
+  font-size: 2em;
+  text-align: center;
+}
+.contact-container .contact-contents p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+}
+
+.form-contact {
+  width: 700px;
+  padding: 2em;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.form-contact .name,
+.form-contact .company {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 0.9em;
+}
+
+.form-contact .name input,
+.form-contact .company input {
+  width: 100%;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-contact .text input {
+  width: 100%;
+  height: 100px;
+  padding: 5px 15px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+.form-button button {
+  background-color: rgb(177, 138, 97);
+  border: none;
+  border-radius: 15px;
+  color: whitesmoke;
+  font-size: 1em;
+  padding: 0.5em 5em;
+  cursor: pointer;
+}
+
+.form-button button:hover {
+  background-color: rgb(167, 128, 87);
+}
+
+/* footer */
+.footer-container {
+  background-color: rgb(221, 221, 221);
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  gap: 10em;
+}
+
+.footer-container h3 {
+  margin-bottom: 0.4em;
+}
+
+.footer-container p {
+  color: grey;
+  margin-bottom: 5px;
+}
+
+/* footer END */
